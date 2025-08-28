@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barriecito&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="img/icon.jpg" rel="icon" />
+  </head>
+
+  <body>
+    <!-- Navigation Bar -->
+    <div class="nav-container">
+      <div class="logo">&lt;/&gt</div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav-link">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="section">
+      <div class="section-header">
+        <h1>
+          Hi, I'm Kiran <br />
+          Tamang
+        </h1>
+        <h2 class="typewriter">A Full Stack Developer</h2>
+        <br />
+        <p>
+          "I'm Kiran, a web developer studying at  <strong
+            ><a
+              href="https://setouchicollege.com/"
+              target="_blank"
+              style="text-decoration: none; color: #ff9f1c"
+              >Nihon IT Business College</a
+            ></strong
+          > in Japan. This portfolio shows my work and projects in web development
+        </p>
+        <div class="links">
+          <h3>Follow me on</h3>
+          <ul class="media-links">
+            <li>
+              <a href="https://www.facebook.com/susang.thokar.9" target="_blank"
+                ><i class="fab fa-facebook-f"></i> Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/12kirantamang" target="_blank"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/su_sang_thokar/"
+                target="_blank"
+                ><i class="fab fa-instagram"></i> Instagram</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/kiran-tamang-713192197/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="scene">
+        <div class="cube auto-rotate">
+          <div class="cube-face cube-face--front">
+            <img src="img/html1.png" alt="HTML" />
+          </div>
+          <div class="cube-face cube-face--back">
+            <img src="img/php.png" alt="PHP" />
+          </div>
+          <div class="cube-face cube-face--right">
+            <img src="img/python.png" alt="Python" />
+          </div>
+          <div class="cube-face cube-face--left">
+            <img src="img/django.jpg" alt="django" />
+          </div>
+          <div class="cube-face cube-face--top">
+            <img src="img/css1.svg" alt="css" />
+          </div>
+          <div class="cube-face cube-face--bottom">
+            <img src="img/laravel.png" alt="laravel" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="about-me">
+        <h1>About Me</h1>
+        <h2>Full Stack Developer</h2>
+        <p style="font-size: 1.125rem">
+          My name is Kiran Tamang, and I am 26 years old from Nepal. I have
+          always been passionate about learning new cultures and languages,
+          which led me to Japan. I completed a two-year Japanese language
+          program in Okinawa, where I gained not only language skills but also
+          valuable cultural experiences. Currently, I am living in Okayama and
+          pursuing my studies at
+          <strong
+            ><a
+              href="https://setouchicollege.com/"
+              target="_blank"
+              style="text-decoration: none; color: #ff9f1c"
+              >Nihon IT Business College</a
+            ></strong
+          >
+          . My focus is on developing skills in information technology and
+          business, as I believe IT plays a key role in shaping the future. I
+          enjoy exploring how technology can solve real-world problems and
+          improve daily life.
+          <details>
+            <summary>read more</summary>
+            <p style="font-size: 1.125rem">
+              Outside of academics, I like to stay curious and creative—whether
+              it’s through traveling, learning new skills, or connecting with
+              people from different backgrounds. My goal is to continue growing
+              both personally and professionally, and to build a career that
+              combines my interests in technology, communication, and
+              international collaboration.
+            </p>
+          </details>
+        </p>
+      </div>
+      <div class="image">
+        <img
+          style="height: 400px; width: 400px"
+          src="img/luffy.jpg"
+          alt="Kiran Tamang Profile Picture"
+        />
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skill">
+      <h2 class="skill__title">Skills & Languages</h2>
+      <div class="skill__list">
+        <div class="skill-activity">
+          <h3 class="skill-activity__title">HTML</h3>
+          <p class="skill-activity__description">
+           I have experience with HTML and use it to build clean, organized, and easy-to-read web pages that form the foundation of websites.
+          </p>
+          <button class="read-more-btn">Read More</button>
+          <img src="img/html1.png" alt="HTML Logo" />
+        </div>
+
+        <div class="skill-activity">
+          <h3 class="skill-activity__title">CSS</h3>
+          <p class="skill-activity__description">
+            I have experience with CSS and use it to style web pages, making them visually appealing, responsive, and easy to use
+          </p>
+          <button class="read-more-btn">Read More</button>
+          <img src="img/css1.svg" alt="CSS Logo" />
+        </div>
+
+        <div class="skill-activity">
+          <h3 class="skill-activity__title">PHP</h3>
+          <p class="skill-activity__description">
+            I use PHP to build dynamic and powerful back-end functionalities.
+            With strong knowledge of server-side scripting, I can create custom
+            features, manage databases, and ensure secure, efficient
+            performance.
+          </p>
+          <!-- FIX: Removed stray closing </details> tag -->
+          <button class="read-more-btn">Read More</button>
+          <img src="img/php.png" alt="PHP Logo" />
+        </div>
+
+        <div class="skill-activity">
+          <h3 class="skill-activity__title">Laravel</h3>
+          <p class="skill-activity__description">
+            I have experience with Laravel to build web applications efficiently, using its features for routing, databases, and backend logic.
+          </p>
+          <button class="read-more-btn">Read More</button>
+          <img src="img/laravel.png" alt="Laravel Logo" />
+        </div>
+
+        <div class="skill-activity">
+          <h3 class="skill-activity__title">Python</h3>
+          <p class="skill-activity__description">
+            I use Python for versatile programming needs, from scripting and
+            automation to data analysis and web development. Its simple syntax
+            and powerful libraries enable me to build efficient, scalable
+            solutions.
+          </p>
+          <button class="read-more-btn">Read More</button>
+          <img src="img/python.png" alt="Python Logo" />
+        </div>
+
+        <div class="skill-activity">
+          <h3 class="skill-activity__title">Django</h3>
+          <p class="skill-activity__description">
+            I utilize Django, a high-level Python web framework, to build secure
+            and maintainable web applications rapidly. I appreciate its
+            "batteries-included" philosophy for creating complex,
+            database-driven websites.
+          </p>
+          <button class="read-more-btn">Read More</button>
+          <img src="img/django.jpg" alt="Django Logo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects" class="project">
+      <h1 class="project_header">Projects</h1>
+      <div class="project_container">
+        <div class="project_activity">
+          <h3 class="project_title">&lt;/&gt;<br />Okayama Landing Page</h3>
+          <p class="project__description">
+            This project is a landing page for Okayama, Japan, designed to
+            showcase the city’s culture, attractions, and cuisine. The page
+            provides information about popular destinations such as Kurashiki,
+            Okayama City, and Setouchi, along with local food highlights.
+          </p>
+          <a
+            href="https://12kirantamang.github.io/Okayama-Landing-page/"
+            target="_blank"
+            class="btn2"
+            >Learn More</a
+          >
+        </div>
+        <div class="project_activity">
+          <h3 class="project_title">&lt;/&gt;<br />Laravel Landing Page</h3>
+          <p class="project__description">
+            The project is complete and available on GitHub, but it has not yet
+            been deployed online.Built with Laravel PHP framework Clean, modern,
+            and responsive design. Easy-to-update blog and content sections.
+            Contact form ready for backend integration.
+          </p>
+          <a
+            href="https://github.com/12kirantamang/laravel-okayama"
+            class="btn2"
+            target="_blank"
+            >Learn More</a
+          >
+        </div>
+        <div class="project_activity">
+          <h3 class="project_title">&lt;/&gt;<br />Laravel Coffee</h3>
+          <p class="project__description">
+            The project is complete and available on GitHub, but not yet
+            deployed online. Table booking with available time slots Responsive
+            design for mobile and desktop. Admin panel to manage bookings and
+            availability. Built with Laravel PHP framework.
+          </p>
+          <a
+            href="https://github.com/12kirantamang/laravel-coffee-project"
+            class="btn2"
+            target="_blank"
+            >Learn More</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- contact section  -->
+    <h1 class="contact-container" id="contact">get in touch</h1>
+    <div class="form-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p style="font-size: 1.125rem">
+          If you have any questions or would like to get in touch, feel free to
+          reach out via email or connect with me on social media.
+        </p>
+
+        <ul class="social-links">
+          <li>
+            <a href="https://www.facebook.com/susang.thokar.9" target="_blank"
+              ><i class="fab fa-facebook-f"></i> Facebook</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/12kirantamang" target="_blank"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/su_sang_thokar/" target="_blank"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kiran-tamang-713192197/"
+              target="_blank"
+              ><i class="fab fa-linkedin-in"></i> LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://mail.google.com/susangthokar"
+              ><i class="fas fa-envelope" target="_blank"></i> Gmail</a
+            >
+          </li>
+        </ul>
+      </div>
+      <form class="form">
+        <label for="name">Name</label>
+        <input id="name" type="text" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" placeholder="Your Email" required />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="6"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2025 Kiran Tamang. All rights reserved.</p>
+        <p>Designed and Developed by Kiran Tamang</p>
+      </div>
+    </footer>
+
+ 
+       <script src="js/script.js"></script>
+
+   
+  </body>
+</html>
