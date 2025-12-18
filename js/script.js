@@ -1,5 +1,5 @@
   document.querySelector(".typewriter").textContent =
-        "A Developer";
+        "A FullStack Developer";
 
       const buttons = document.querySelectorAll(".read-more-btn");
       buttons.forEach((btn) => {
