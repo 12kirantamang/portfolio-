@@ -72,6 +72,10 @@ const translations = {
         title: "Okayama Landing Page",
         desc: "This project is a landing page for Okayama, Japan, designed to showcase the city's culture, attractions, and cuisine. The page provides information about popular destinations such as Kurashiki, Okayama City, and Setouchi, along with local food highlights."
       },
+      eco: {
+        title: "Eco-tourism",
+        desc: "This project was developed during a hackathon to promote eco-tourism and sustainable travel experiences. Built with a Java-based backend, it helps users discover environmentally friendly destinations, local attractions, and nature-focused activities while encouraging responsible tourism practices."
+      },
       laravel: {
         title: "Laravel Landing Page",
         desc: "The project is complete and available on GitHub, but it has not yet been deployed online. Built with Laravel PHP framework Clean, modern, and responsive design. Easy-to-update blog and content sections. Contact form ready for backend integration."
@@ -79,6 +83,18 @@ const translations = {
       coffee: {
         title: "Laravel Coffee",
         desc: "The project is complete and available on GitHub, but not yet deployed online. Table booking with available time slots Responsive design for mobile and desktop. Admin panel to manage bookings and availability. Built with Laravel PHP framework."
+      },
+      miniStore: {
+        title: "Mini Store",
+        desc: "Django MiniStore is a lightweight e-commerce platform that allows users to browse products, manage a shopping cart, save items to a wishlist, and place orders with Stripe checkout. It also includes an administration panel with CSV export support."
+      },
+      memo: {
+        title: "Memo PHP",
+        desc: "This project is a memo management web application developed using PHP. It allows users to create, view, edit, and organize notes through a simple and intuitive interface while demonstrating CRUD functionality and database integration."
+      },
+      shoei: {
+        title: "Shoei Driving School Website",
+        desc: "This project is a responsive recruitment website created for Shoei Driving School in Japan. It helps connect foreign job seekers with opportunities by providing clear information about positions, visa sponsorship, accommodation support, and the application process."
       },
       btn: "Learn More"
     },
@@ -159,6 +175,10 @@ const translations = {
         title: "岡山ランディングページ",
         desc: "このプロジェクトは、日本の岡山の文化、観光地、料理を紹介するランディングページです。倉敷、岡山市、瀬戸内などの人気スポットや地元の食文化の情報を提供しています。"
       },
+      eco: {
+        title: "エコツーリズム",
+        desc: "このプロジェクトは、エコツーリズムと持続可能な旅行体験を広めるためにハッカソンで開発されました。Javaベースのバックエンドで構築され、環境にやさしい観光地や地域の魅力、自然を楽しむアクティビティを見つけやすくしています。"
+      },
       laravel: {
         title: "Laravelランディングページ",
         desc: "このプロジェクトはGitHubで完成して公開されていますが、まだオンラインには展開されていません。Laravel PHPフレームワークで構築され、クリーンでモダンなレスポンシブデザインです。ブログやコンテンツセクションの更新が簡単で、バックエンド統合に対応したお問い合わせフォームも備えています。"
@@ -166,6 +186,18 @@ const translations = {
       coffee: {
         title: "Laravelコーヒー",
         desc: "このプロジェクトはGitHubで完成して公開されていますが、まだオンラインには展開されていません。予約可能な時間帯でのテーブル予約、モバイルとデスクトップに対応したレスポンシブデザイン、予約と空席管理のための管理パネルを備えています。Laravel PHPフレームワークで構築されています。"
+      },
+      miniStore: {
+        title: "ミニストア",
+        desc: "Django MiniStoreは、商品閲覧、カート管理、ウィッシュリスト保存、Stripe決済での注文を行える軽量なECプラットフォームです。CSVエクスポートに対応した管理画面も備えています。"
+      },
+      memo: {
+        title: "メモPHP",
+        desc: "このプロジェクトはPHPで開発したメモ管理Webアプリケーションです。シンプルで直感的な操作で、ノートの作成、表示、編集、整理ができ、CRUD機能とデータベース連携を学べます。"
+      },
+      shoei: {
+        title: "松栄自動車学校サイト",
+        desc: "このプロジェクトは、日本の松栄自動車学校向けに作成したレスポンシブな採用サイトです。求人情報、ビザスポンサー、住居サポート、応募手順などを分かりやすく伝え、外国人求職者と仕事の機会をつなげます。"
       },
       btn: "詳細を見る"
     },
@@ -279,13 +311,13 @@ function updateContent(lang) {
   }
   
   const projectActivities = document.querySelectorAll('.project_activity');
-  const projectKeys = ['okayama', 'laravel', 'coffee'];
+  const projectKeys = ['okayama', 'eco', 'coffee', 'miniStore', 'memo', 'shoei'];
   
   projectActivities.forEach((activity, index) => {
     const key = projectKeys[index];
     if (key && t.projects[key]) {
-      const title = activity.querySelector('.project_title');
-      const desc = activity.querySelector('.project__description');
+      const title = activity.querySelector('.project-card__title');
+      const desc = activity.querySelector('.project-card__description');
       const btn = activity.querySelector('.btn2');
       
       if (title) title.innerHTML = `&lt;/&gt;<br />${t.projects[key].title}`;

@@ -12,7 +12,8 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Limelight&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <link href="img/icon.jpg" rel="icon" />
+  <link href="img/portfolio.png" rel="icon" />
+
 </head>
 
 <body>
@@ -35,7 +36,7 @@
       </ul>
     </div>
   </div>
-  
+
   <div class="language-switcher">
     <button class="lang-btn" id="langToggle" aria-label="Switch language">
       <i class="fas fa-globe"></i>
@@ -79,6 +80,11 @@
             <a href="https://www.linkedin.com/in/kiran-tamang-713192197/" target="_blank"><i
                 class="fab fa-linkedin-in"></i> LinkedIn</a>
           </li>
+          <li>
+            <a href="https://line.me/ti/p/gGRg6ZPCHe" target="_blank">
+              <i class="fab fa-line"></i> LINE
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -86,7 +92,7 @@
     <div class="scene">
       <div class="cube auto-rotate">
         <div class="cube-face cube-face--front">
-          <img src="img/html1.png" alt="HTML" />
+          <img src="img/html.png" alt="HTML" />
         </div>
         <div class="cube-face cube-face--back">
           <img src="img/php.png" alt="PHP" />
@@ -119,23 +125,13 @@
         program in Okinawa, where I gained not only language skills but also
         valuable cultural experiences. Currently, I am living in Okayama and
         pursuing my studies at
-        <strong><a href="https://setouchicollege.com/" target="_blank"
+        <strong><a href="https://setouchicollege.com/" target="_blank" HTML
             style="text-decoration: none; color: #ff9f1c">Nihon IT Business College</a></strong>
         . My focus is on developing skills in information technology and
         business, as I believe IT plays a key role in shaping the future. I
         enjoy exploring how technology can solve real-world problems and
         improve daily life.
-      <!-- <details>
-        <summary>read more</summary>
-        <p style="font-size: 1.125rem">
-          Outside of academics, I like to stay curious and creative—whether
-          it’s through traveling, learning new skills, or connecting with
-          people from different backgrounds. My goal is to continue growing
-          both personally and professionally, and to build a career that
-          combines my interests in technology, communication, and
-          international collaboration.
-        </p>
-      </details> -->
+
       </p>
     </div>
     <div class="image">
@@ -147,72 +143,77 @@
   <section id="skills" class="skill">
     <h2 class="skill__title">Skills & Languages</h2>
     <div class="skill__list">
-      <div class="skill-activity">
-        <h3 class="skill-activity__title">HTML</h3>
-        <p class="skill-activity__description">
-          I have experience with HTML and use it to build clean, organized,
-          and easy-to-read web pages that form the foundation of websites.
-        </p>
-        <button class="read-more-btn">Read More</button>
-        <img src="img/html1.png" alt="HTML Logo" />
+      <div class="skill-activity card">
+        <img class="card__image" src="img/html.png" alt="HTML Logo" />
+        <div class="card__content">
+          <h3 class="skill-activity__title">HTML</h3>
+          <p class="skill-activity__description">
+            I have experience with HTML and use it to build clean, organized,
+            and easy-to-read web pages that form the foundation of websites.
+          </p>
+        </div>
       </div>
 
-      <div class="skill-activity">
-        <h3 class="skill-activity__title">CSS</h3>
-        <p class="skill-activity__description">
-          I have experience with CSS and use it to style web pages, making
-          them visually appealing, responsive, and easy to use
-        </p>
-        <button class="read-more-btn">Read More</button>
-        <img src="img/css1.svg" alt="CSS Logo" />
+      <div class="skill-activity card">
+        <img class="card__image" src="img/css1.svg" alt="CSS Logo" />
+        <div class="card__content">
+          <h3 class="skill-activity__title">CSS</h3>
+          <p class="skill-activity__description">
+            I have experience with CSS and use it to style web pages, making
+            them visually appealing, responsive, and easy to use.
+          </p>
+        </div>
       </div>
 
-      <div class="skill-activity">
-        <h3 class="skill-activity__title">PHP</h3>
-        <p class="skill-activity__description">
-          I use PHP to build dynamic and powerful back-end functionalities.
-          With strong knowledge of server-side scripting, I can create custom
-          features, manage databases, and ensure secure, efficient
-          performance.
-        </p>
-        <!-- FIX: Removed stray closing </details> tag -->
-        <button class="read-more-btn">Read More</button>
-        <img src="img/php.png" alt="PHP Logo" />
+      <div class="skill-activity card">
+        <img class="card__image" src="img/php.png" alt="PHP Logo" />
+        <div class="card__content">
+          <h3 class="skill-activity__title">PHP</h3>
+          <p class="skill-activity__description">
+            I use PHP to build dynamic and powerful back-end functionalities.
+            With strong knowledge of server-side scripting, I can create custom
+            features, manage databases, and ensure secure, efficient
+            performance.
+          </p>
+        </div>
       </div>
 
-      <div class="skill-activity">
-        <h3 class="skill-activity__title">Laravel</h3>
-        <p class="skill-activity__description">
-          I have experience with Laravel to build web applications
-          efficiently, using its features for routing, databases, and backend
-          logic.
-        </p>
-        <button class="read-more-btn">Read More</button>
-        <img src="img/laravel.png" alt="Laravel Logo" />
+      <div class="skill-activity card">
+        <img class="card__image" src="img/laravel.png" alt="Laravel Logo" />
+        <div class="card__content">
+          <h3 class="skill-activity__title">Laravel</h3>
+          <p class="skill-activity__description">
+            I have experience with Laravel to build web applications
+            efficiently, using its features for routing, databases, and backend
+            logic.
+          </p>
+        </div>
       </div>
 
-      <div class="skill-activity">
-        <h3 class="skill-activity__title">Python</h3>
-        <p class="skill-activity__description">
-          I use Python for versatile programming needs, from scripting and
-          automation to data analysis and web development. Its simple syntax
-          and powerful libraries enable me to build efficient, scalable
-          solutions.
-        </p>
-        <button class="read-more-btn">Read More</button>
-        <img src="img/python.png" alt="Python Logo" />
+      <div class="skill-activity card">
+        <img class="card__image" src="img/python.png" alt="Python Logo" />
+        <div class="card__content">
+          <h3 class="skill-activity__title">Python</h3>
+          <p class="skill-activity__description">
+            I use Python for versatile programming needs, from scripting and
+            automation to data analysis and web development. Its simple syntax
+            and powerful libraries enable me to build efficient, scalable
+            solutions.
+          </p>
+        </div>
       </div>
 
-      <div class="skill-activity">
-        <h3 class="skill-activity__title">Django</h3>
-        <p class="skill-activity__description">
-          I utilize Django, a high-level Python web framework, to build secure
-          and maintainable web applications rapidly. I appreciate its
-          "batteries-included" philosophy for creating complex,
-          database-driven websites.
-        </p>
-        <button class="read-more-btn">Read More</button>
-        <img src="img/django.jpg" alt="Django Logo" />
+      <div class="skill-activity card">
+        <img class="card__image" src="img/django.jpg" alt="Django Logo" />
+        <div class="card__content">
+          <h3 class="skill-activity__title">Django</h3>
+          <p class="skill-activity__description">
+            I utilize Django, a high-level Python web framework, to build secure
+            and maintainable web applications rapidly. I appreciate its
+            "batteries-included" philosophy for creating complex,
+            database-driven websites.
+          </p>
+        </div>
       </div>
     </div>
   </section>
@@ -221,37 +222,95 @@
   <section id="projects" class="project">
     <h1 class="project_header">Projects</h1>
     <div class="project_container">
-      <div class="project_activity">
-        <h3 class="project_title">&lt;/&gt;<br />Okayama Landing Page</h3>
-        <p class="project__description">
-          This project is a landing page for Okayama, Japan, designed to
-          showcase the city’s culture, attractions, and cuisine. The page
-          provides information about popular destinations such as Kurashiki,
-          Okayama City, and Setouchi, along with local food highlights.
-        </p>
-        <a href="https://12kirantamang.github.io/Okayama-Landing-page/" target="_blank" class="btn2">Learn More</a>
+      <div class="project_activity project-card">
+        <img class="project-card__image" src="img/okayama.png" alt="Okayama Landing Page preview" />
+        <div class="project-card__content">
+          <h3 class="project-card__title">&lt;/&gt;<br />Okayama Landing Page</h3>
+          <p class="project-card__description">
+            This project is a landing page for Okayama, Japan, designed to
+            showcase the city’s culture, attractions, and cuisine. The page
+            provides information about popular destinations such as Kurashiki,
+            Okayama City, and Setouchi, along with local food highlights.
+          </p>
+          <a href="https://12kirantamang.github.io/Okayama-Landing-page/" target="_blank" class="btn2">Learn More</a>
+        </div>
       </div>
-      <div class="project_activity">
-        <h3 class="project_title">&lt;/&gt;<br />Laravel Landing Page</h3>
-        <p class="project__description">
-          The project is complete and available on GitHub, but it has not yet
-          been deployed online.Built with Laravel PHP framework Clean, modern,
-          and responsive design. Easy-to-update blog and content sections.
-          Contact form ready for backend integration.
-        </p>
-        <a href="https://github.com/12kirantamang/laravel-okayama" class="btn2" target="_blank">Learn More</a>
+      <div class="project_activity project-card">
+        <img class="project-card__image" src="img/eco.png" alt="Laravel Landing Page preview" />
+        <div class="project-card__content">
+          <h3 class="project-card__title">&lt;/&gt;<br />eco-tourism</h3>
+          <p class="project-card__description">
+            This project was developed as part of a hackathon to promote eco-tourism and sustainable travel experiences.
+            Built with a Java-based backend, the platform helps users discover environmentally friendly destinations,
+            local attractions, and nature-focused activities while encouraging responsible tourism practices. The
+            project demonstrates collaborative development, rapid problem-solving, backend application development, and
+            the ability to deliver a functional solution within a limited timeframe.
+
+          </p>
+          <a href="https://github.com/12kirantamang/eco-toursim2" class="btn2" target="_blank">Learn More</a>
+        </div>
       </div>
-      <div class="project_activity">
-        <h3 class="project_title">&lt;/&gt;<br />Laravel Coffee</h3>
-        <p class="project__description">
-          The project is complete and available on GitHub, but not yet
-          deployed online. Table booking with available time slots Responsive
-          design for mobile and desktop. Admin panel to manage bookings and
-          availability. Built with Laravel PHP framework.
-        </p>
-        <a href="https://github.com/12kirantamang/laravel-coffee-project" class="btn2" target="_blank">Learn More</a>
+      <div class="project_activity project-card">
+        <img class="project-card__image" src="img/laravel_coffe.png" alt="Laravel Coffee preview" />
+        <div class="project-card__content">
+          <h3 class="project-card__title">&lt;/&gt;<br />Laravel Coffee</h3>
+          <p class="project-card__description">
+            The project is complete and available on GitHub, but not yet
+            deployed online. Table booking with available time slots, responsive
+            design for mobile and desktop, and an admin panel to manage bookings
+            and availability. Built with Laravel PHP framework.
+          </p>
+          <a href="https://github.com/12kirantamang/laravel-coffee-project" class="btn2" target="_blank">Learn More</a>
+        </div>
+      </div>
+      <div class="project_activity project-card">
+        <img class="project-card__image" src="img/mini_store.png" alt="mini_store preview" />
+        <div class="project-card__content">
+          <h3 class="project-card__title">&lt;/&gt;<br />Mini_store</h3>
+          <p class="project-card__description">
+            Django MiniStore is a lightweight e-commerce platform that allows users to browse products, manage their
+            shopping cart,
+            save items to their wishlist, and place orders with Stripe for live checkout. It also features an
+            administration panel with CSV export functionality.
+          </p>
+          <a href="https://github.com/12kirantamang/django-mini-store" class="btn2" target="_blank">Learn More</a>
+        </div>
+      </div>
+      <div class="project_activity project-card">
+        <img class="project-card__image" src="img/memo.png" alt="memo-php preview" />
+        <div class="project-card__content">
+          <h3 class="project-card__title">&lt;/&gt;<br />Memo-php</h3>
+          <p class="project-card__description">
+            This project is a memo management web application developed using PHP. The application allows users to
+            create, view, edit, and organize notes through a simple and intuitive interface.
+            The project focuses on implementing core CRUD (Create, Read, Update, Delete) functionality, data management,
+            and user-friendly design while demonstrating practical PHP development skills and database integration.
+
+          </p>
+          <a href="https://github.com/12kirantamang/memo-php" class="btn2" target="_blank">Learn More</a>
+        </div>
+      </div>
+      <div class="project_activity project-card">
+        <img class="project-card__image" src="img/shoei.png" alt="shoei preview" />
+        <div class="project-card__content">
+          <h3 class="project-card__title">&lt;/&gt;<br />shoei-driving-school-website</h3>
+          <p class="project-card__description">
+            This project is a responsive recruitment website created for Shoei Driving School in Japan. The landing page
+            was designed to help connect foreign job seekers with employment opportunities by providing clear
+            information about available positions, visa sponsorship,
+            accommodation support, and the application process. The project demonstrates modern front-end development
+            practices, multilingual content management, responsive design, and user-focused interface design.
+
+          </p>
+          <a href="https://12kirantamang.github.io/shoei-driving-school-website/" class="btn2" target="_blank">Learn
+            More</a>
+        </div>
       </div>
     </div>
+    </div>
+    </div>
+    </div>
+
   </section>
   <!-- contact section  -->
   <h1 class="contact-container" id="contact">get in touch</h1>
@@ -280,7 +339,9 @@
               class="fab fa-linkedin-in"></i> LinkedIn</a>
         </li>
         <li>
-          <a href="https://mail.google.com/susangthokar"><i class="fas fa-envelope" target="_blank"></i> Gmail</a>
+          <a href="https://line.me/ti/p/gGRg6ZPCHe" target="_blank">
+            <i class="fab fa-line"></i> LINE
+          </a>
         </li>
       </ul>
     </div>
